@@ -31,7 +31,7 @@ public class Robot extends TimedRobot {
 
     //Curvature Drive  
     double forwardSpeed = controller0.getRightTriggerAxis();
-    double reverseSpeed = -controller0.getLeftTriggerAxis();
+    double reverseSpeed = controller0.getLeftTriggerAxis();
     double turn = controller0.getLeftX();
     
     if (forwardSpeed > 0){
